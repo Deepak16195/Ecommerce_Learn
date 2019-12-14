@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E2DADA"
+    android:fillViewport="false">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:sliderAnimationDuration="600"
+        app:sliderCircularHandlerEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TopCategories"
+        android:textSize="20sp"
+        android:layout_below="@id/imageSlider"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/topCategory"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageSlider"
+        android:background="@drawable/btn_seeall_custom"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/right"
+        android:text="See All"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_TopCategory_seeAll"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/topCategory"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/rvTopCategory"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hot Deals"
+        android:textSize="20sp"
+        android:layout_below="@id/rvTopCategory"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/HotDeals"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rvTopCategory"
+        android:background="@drawable/btn_seeall_custom"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/right"
+        android:text="See All"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_HotDeals_seeAll"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HotDeals"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/rvHotDeals"/>
+
+</RelativeLayout>
+</ScrollView>

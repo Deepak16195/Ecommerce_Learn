@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/hotdeal_armchair"
+                android:id="@+id/brandDeal_image"/>
+
+            <TextView
+                android:id="@+id/brandDeal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop Name \nWe have the right for you"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/brandDeal_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="75% OFF"
+                android:textColor="@color/white"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="30dp"/>
+
+        </FrameLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
